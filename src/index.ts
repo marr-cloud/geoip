@@ -1,5 +1,11 @@
 export default {
 	async fetch(request): Promise<Response> {
+		const url = new URL(request.url);
+
+		// Si piden el favicon
+		if (url.pathname === '/favicon.ico') {
+			return Response.redirect('https://twenty-icons.com/cloudflare.com/16', 302);
+		}
 		if (request.method === 'OPTIONS') {
 			return new Response(null, {
 				headers: {
