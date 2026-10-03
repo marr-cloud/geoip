@@ -6,10 +6,11 @@
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
-		"cf-typegen": "wrangler types"
+		"cf-typegen": "wrangler types",
+		"test": "tsc --noEmit"
 	},
 	"devDependencies": {
-		"typescript": "^5.5.2",
-		"wrangler": "^4.42.1"
+		"typescript": "^7.0.2",
+		"wrangler": "^4.146.0"
 	}
 }
