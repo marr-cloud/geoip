@@ -6,7 +6,7 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "geoip",
 	"main": "src/index.ts",
-	"compatibility_date": "2025-10-08",
+	"compatibility_date": "2026-10-01",
 	"workers_dev": false,
 	"observability": {
 		"enabled": true
