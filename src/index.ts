@@ -7,7 +7,7 @@ const FAVICON = Uint8Array.from(
 );
 
 const SECURITY_HEADERS: Record<string, string> = {
-	'Content-Security-Policy': "default-src 'none'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+	'Content-Security-Policy': "default-src 'none'; img-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
 	'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',
 	'X-Content-Type-Options': 'nosniff',
 	'X-Frame-Options': 'DENY',
